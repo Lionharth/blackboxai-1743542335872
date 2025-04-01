@@ -1,0 +1,50 @@
+name: cherrytalk
+description: "A modern Matrix chat client with E2EE and frosted glass UI"
+publish_to: 'none'
+version: 1.0.0+1
+homepage: https://github.com/yourusername/cherrytalk
+repository: https://github.com/yourusername/cherrytalk.git
+issue_tracker: https://github.com/yourusername/cherrytalk/issues
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  matrix: ^0.8.0
+  olm: ^3.2.8
+  flutter_blurhash: ^0.7.0
+  glassmorphism: ^2.0.0
+  flutter_svg: ^2.0.7
+  provider: ^6.0.5
+  cached_network_image: ^3.2.3
+  flutter_secure_storage: ^8.0.0
+  intl: ^0.18.1
+  url_launcher: ^6.1.11
+  file_picker: ^5.3.3
+  fluttertoast: ^8.2.2
+  shimmer: ^3.0.0
+  google_fonts: ^4.0.4
+  font_awesome_flutter: ^10.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/svgs/
+  
+  # Launcher icons configuration
+  flutter_icons:
+    android: true
+    ios: true
+    image_path: "assets/images/app_icon.png"
+    adaptive_icon_background: "#6a11cb"
+    adaptive_icon_foreground: "assets/images/app_icon_foreground.png"
